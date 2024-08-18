@@ -1,0 +1,17 @@
+h1 {
+    color: maroon;
+}
+
+.post {
+    background-color: antiquewhite;
+}
+
+.user {
+    font-style: italic;
+}
+.form{
+    margin: 40px;
+}
+.newinputname{
+    margin-bottom: 4px;
+}
