@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Posts</title>
 </head>
-<link rel="stylesheet" href="/Backend/public/style.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
 
 <body>
     <h1>Quora Posts</h1>
@@ -19,12 +19,16 @@
             </h4>
             <br>
             <a href="http://localhost:8080/posts/<%= post.id %>">See in details</a>
+            <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
+            <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                <button>Delete</button>
+            </form>
         </div>
         <%}%>
 
-        <br/>
-        <br/>
-        <a href="http://localhost:8080/posts/new">Create new posts</a>
+            <br />
+            <br />
+            <a href="http://localhost:8080/posts/new">Create new posts</a>
 
 </body>
 
